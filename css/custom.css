@@ -1,0 +1,52 @@
+/* Giscus 评论框样式 */
+.giscus, .giscus-frame {
+  width: 100%;
+  border: none;
+  margin-top: 2rem;
+}
+
+/* 适配深色模式 */
+[data-theme="dark"] .giscus-frame {
+  color-scheme: dark;
+}
+
+/* 评论框容器 */
+.giscus-frame {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background: var(--card-bg);
+  padding: 20px;
+}
+
+/* 评论头部 */
+.giscus .giscus-header {
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 1rem;
+}
+
+/* 评论输入框 */
+.giscus .giscus-textarea {
+  background: var(--body-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 12px;
+  min-height: 100px;
+}
+
+/* 提交按钮 */
+.giscus .giscus-button {
+  background: #238636;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.giscus .giscus-button:hover {
+  background: #2ea043;
+}
