@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>欢迎来到我的博客 | Nexmoe主题</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+<pre><code>    body &#123;
+        font-family: &#39;Segoe UI&#39;, &#39;Microsoft YaHei&#39;, sans-serif;
+        overflow: hidden;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        position: relative;
+    &#125;
+    
+    /* 背景图片容器 */
+    .background &#123;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        z-index: -2;
+        transition: background-image 1.5s ease-in-out;
+    &#125;
+    
+    /* 覆盖层增强文字可读性 */
+    .overlay &#123;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.4);
+        z-index: -1;
+    &#125;
+    
+    /* 主内容容器 */
+    .welcome-container &#123;
+        text-align: center;
+        max-width: 800px;
+        padding: 2rem;
+        position: relative;
+        z-index: 10;
+        animation: fadeIn 1.5s ease-out;
+    &#125;
+    
+    /* 磨砂玻璃效果卡片 */
+    .glass-card &#123;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border-radius: 20px;
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+        padding: 2.5rem;
+        margin-bottom: 2rem;
+    &#125;
+    
+    /* 标题样式 */
+    .title &#123;
+        font-size: 3.5rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+        text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        letter-spacing: 1px;
+    &#125;
+    
+    /* 副标题 */
+    .subtitle &#123;
+        font-size: 1.4rem;
+        font-weight: 300;
+        margin-bottom: 2rem;
+        opacity: 0.9;
+        line-height: 1.6;
+    &#125;
+    
+    /* 进入按钮 */
+    .enter-btn &#123;
+        display: inline-block;
+        padding: 15px 45px;
+        background: rgba(255, 255, 255, 0.15);
+        border: 2px solid rgba(255, 255, 255, 0.3);
+        border-radius: 50px;
+        color: white;
+        font-size: 1.2rem;
+        font-weight: 600;
+        text-decoration: none;
+        cursor: pointer;
+        transition: all 0.4s ease;
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        position: relative;
+        overflow: hidden;
+        margin-top: 1rem;
+        animation: pulse 2s infinite;
+    &#125;
+    
+    .enter-btn:hover &#123;
+        background: rgba(255, 255, 255, 0.25);
+        transform: translateY(-5px);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    &#125;
+    
+    .enter-btn i &#123;
+        margin-left: 8px;
+        transition: transform 0.3s ease;
+    &#125;
+    
+    .enter-btn:hover i &#123;
+        transform: translateX(5px);
+    &#125;
+    
+    /* 设备指示器 */
+    .device-indicator &#123;
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 0.9rem;
+        opacity: 0.7;
+        background: rgba(0, 0, 0, 0.3);
+        padding: 5px 15px;
+        border-radius: 20px;
+    &#125;
+    
+    /* 动画效果 */
+    @keyframes fadeIn &#123;
+        from &#123; opacity: 0; transform: translateY(20px); &#125;
+        to &#123; opacity: 1; transform: translateY(0); &#125;
+    &#125;
+    
+    @keyframes pulse &#123;
+        0% &#123; box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.2); &#125;
+        70% &#123; box-shadow: 0 0 0 15px rgba(255, 255, 255, 0); &#125;
+        100% &#123; box-shadow: 0 0 0 0 rgba(255, 255, 255, 0); &#125;
+    &#125;
+    
+    /* 响应式设计 */
+    @media (max-width: 768px) &#123;
+        .title &#123;
+            font-size: 2.5rem;
+        &#125;
+        
+        .subtitle &#123;
+            font-size: 1.1rem;
+        &#125;
+        
+        .glass-card &#123;
+            padding: 1.8rem;
+        &#125;
+        
+        .enter-btn &#123;
+            padding: 12px 35px;
+            font-size: 1rem;
+        &#125;
+    &#125;
+    
+    @media (max-width: 480px) &#123;
+        .title &#123;
+            font-size: 2rem;
+        &#125;
+        
+        .subtitle &#123;
+            font-size: 1rem;
+        &#125;
+        
+        .glass-card &#123;
+            padding: 1.5rem;
+        &#125;
+    &#125;
+    
+    /* 图片加载过渡 */
+    .fade-out &#123;
+        opacity: 0;
+        transition: opacity 0.5s ease-out;
+    &#125;
+    
+    .fade-in &#123;
+        opacity: 1;
+        transition: opacity 0.5s ease-in;
+    &#125;
+&lt;/style&gt;
+</code></pre>
+</head>
+<body>
+    <!-- 背景图片容器 -->
+    <div class="background" id="background"></div>
+    
+<pre><code>&lt;!-- 覆盖层 --&gt;
+&lt;div class=&quot;overlay&quot;&gt;&lt;/div&gt;
+
+&lt;!-- 主内容 --&gt;
+&lt;div class=&quot;welcome-container&quot;&gt;
+    &lt;div class=&quot;glass-card&quot;&gt;
+        &lt;h1 class=&quot;title&quot;&gt;欢迎来到我的空间&lt;/h1&gt;
+        &lt;p class=&quot;subtitle&quot;&gt;探索思想与创意的交汇点，分享知识与生活的点滴&lt;br&gt;在这里，每一篇文章都是一个新的世界&lt;/p&gt;
+    &lt;/div&gt;
+    
+    &lt;!-- 进入按钮 --&gt;
+    &lt;a href=&quot;#&quot; class=&quot;alzt02.github.io&quot;&gt;开始探索 &lt;i class=&quot;fas fa-arrow-right&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;!-- 设备指示器 --&gt;
+&lt;div class=&quot;device-indicator&quot; id=&quot;deviceIndicator&quot;&gt;
+    正在使用 &lt;span id=&quot;deviceType&quot;&gt;电脑&lt;/span&gt; 访问 | 当前图片API: &lt;span id=&quot;apiUrl&quot;&gt;https://t.alcy.cc/pc&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;script&gt;
+    // 检测设备类型
+    function detectDevice() &#123;
+        return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) 
+            ? &#39;mobile&#39; 
+            : &#39;desktop&#39;;
+    &#125;
+    
+    // 获取设备对应的API URL
+    function getApiUrl() &#123;
+        const device = detectDevice();
+        const apiUrls = &#123;
+            &#39;desktop&#39;: &#39;https://t.alcy.cc/pc&#39;,
+            &#39;mobile&#39;: &#39;https://t.alcy.cc/mp&#39;
+        &#125;;
+        
+        document.getElementById(&#39;deviceType&#39;).textContent = device === &#39;desktop&#39; ? &#39;电脑&#39; : &#39;手机&#39;;
+        document.getElementById(&#39;apiUrl&#39;).textContent = apiUrls[device];
+        
+        return apiUrls[device];
+    &#125;
+    
+    // 设置背景图片
+    async function setBackgroundImage() &#123;
+        const apiUrl = getApiUrl();
+        const bgElement = document.getElementById(&#39;background&#39;);
+        
+        // 添加淡出效果
+        bgElement.classList.add(&#39;fade-out&#39;);
+        
+        try &#123;
+            // 添加时间戳避免缓存
+            const timestamp = new Date().getTime();
+            const imgUrl = `$&#123;apiUrl&#125;?t=$&#123;timestamp&#125;`;
+            
+            // 预加载图片
+            const img = new Image();
+            img.src = imgUrl;
+            
+            await new Promise((resolve) =&gt; &#123;
+                img.onload = resolve;
+                img.onerror = resolve; // 即使出错也继续
+            &#125;);
+            
+            // 设置背景并添加淡入效果
+            bgElement.style.backgroundImage = `url(&#39;$&#123;imgUrl&#125;&#39;)`;
+            bgElement.classList.remove(&#39;fade-out&#39;);
+            bgElement.classList.add(&#39;fade-in&#39;);
+            
+            setTimeout(() =&gt; &#123;
+                bgElement.classList.remove(&#39;fade-in&#39;);
+            &#125;, 1000);
+            
+        &#125; catch (error) &#123;
+            console.error(&#39;加载背景图片失败:&#39;, error);
+            // 设置备用背景
+            bgElement.style.backgroundImage = &quot;linear-gradient(135deg, #667eea 0%, #764ba2 100%)&quot;;
+            bgElement.classList.remove(&#39;fade-out&#39;);
+        &#125;
+    &#125;
+    
+    // 初始加载
+    setBackgroundImage();
+    
+    // 每30秒更换一次背景
+    setInterval(setBackgroundImage, 30000);
+    
+    // 按钮点击事件
+    document.querySelector(&#39;.enter-btn&#39;).addEventListener(&#39;click&#39;, function(e) &#123;
+        e.preventDefault();
+        // 添加点击动画效果
+        this.classList.add(&#39;clicked&#39;);
+    &#125;);
+&lt;/script&gt;
+</code></pre>
+</body>
+</html>
