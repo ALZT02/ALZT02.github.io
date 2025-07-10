@@ -1,0 +1,661 @@
+<!doctype html>
+<html lang="zh"><head>
+<title>Galgame解包 - 𝑨𝒍𝒛𝒕´𝑹𝒆𝒂𝒍𝒎-𝑵𝒆𝒙𝒎𝒐𝒆</title>
+<meta charset="UTF-8">
+<meta name="keywords" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+
+<link rel="shortcut icon" href="https://img.remit.ee/api/file/BQACAgUAAyEGAASHRsPbAAIjgmhVOmAdmS8-6J_ZvycyOUJURq9BAAJhFAACaQipVvDFa5xcS1aMNgQ.png" type="image/png" />
+<meta name="description" content="Galgame解包写在前面注意：本篇教程仅供参考学习，学习后请于24小时内删除学习成果。禁止传播学习文件，本文作者不负任何可能的法律责任。 本文教程至少适用于YuzuSoft的所有作品（截至2025.7.10）。教程仅适用于含.xp3的galgame的解包。 成果示例 以下为游戏原声文件            本文所用到的工具（注意，二次转发需要署名！！）  https:&#x2F;&#x2F;www.123684.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Galgame解包">
+<meta property="og:url" content="https://alzt02.github.io/2025/07/10/%E9%83%A8%E5%88%86gal%E7%9A%84%E8%A7%A3%E5%8C%85/index.html">
+<meta property="og:site_name" content="𝑨𝒍𝒛𝒕´𝑹𝒆𝒂𝒍𝒎-𝑵𝒆𝒙𝒎𝒐𝒆">
+<meta property="og:description" content="Galgame解包写在前面注意：本篇教程仅供参考学习，学习后请于24小时内删除学习成果。禁止传播学习文件，本文作者不负任何可能的法律责任。 本文教程至少适用于YuzuSoft的所有作品（截至2025.7.10）。教程仅适用于含.xp3的galgame的解包。 成果示例 以下为游戏原声文件            本文所用到的工具（注意，二次转发需要署名！！）  https:&#x2F;&#x2F;www.123684.">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://img.remit.ee/api/file/BQACAgUAAyEGAASHRsPbAAIvB2hvteIk7cqCTxi3odYNdiPa7nC5AAKgFQACVtx4V8515ez_nscpNgQ.png">
+<meta property="og:image" content="https://img.remit.ee/api/file/BQACAgUAAyEGAASHRsPbAAIvCGhvt1K6QBqfFccm6-HGEQk9BhQYAAKiFQACVtx4V27vAAG8TEauAzYE.png">
+<meta property="og:image" content="https://img.remit.ee/api/file/BQACAgUAAyEGAASHRsPbAAIvCWhvt6opjpAdEZITe2GcvmY0eJs2AAKjFQACVtx4V8CpXC7n5BDPNgQ.png">
+<meta property="og:image" content="https://img.remit.ee/api/file/BQACAgUAAyEGAASHRsPbAAIvC2hvuk1M-jOCqtQaUSzXsLqNoahnAAI5GAACXqmBV9DBjaAXoYpzNgQ.png">
+<meta property="og:image" content="https://img.remit.ee/api/file/BQACAgUAAyEGAASHRsPbAAIvDmhvu_fNjQ2exBLN6iGhDKtZ187nAAI-GAACXqmBV2ouDRGHGgT6NgQ.png">
+<meta property="og:image" content="https://img.remit.ee/api/file/BQACAgUAAyEGAASHRsPbAAIvEGhvvqlwEpDeFMw_iHM8y-amSncRAAJEGAACXqmBV3N7prcyw20vNgQ.png">
+<meta property="og:image" content="https://img.remit.ee/api/file/BQACAgUAAyEGAASHRsPbAAIvEWhvwEVe2SN1O5tXRHn9Xhqzut-hAAJLGAACXqmBVyG3a8h7Cd0XNgQ.png">
+<meta property="og:image" content="https://img.remit.ee/api/file/BQACAgUAAyEGAASHRsPbAAIvEmhvwRME11ikRkCpF64CxTzv3cPhAAJRGAACXqmBV_NbPBA8neo3NgQ.png">
+<meta property="og:image" content="https://img.remit.ee/api/file/BQACAgUAAyEGAASHRsPbAAIvE2hvw4LtEoB9nDb2UWGUhVZTEN6iAAJjGAACXqmBVyZuIz5YyePbNgQ.png">
+<meta property="og:image" content="https://img.remit.ee/api/file/BQACAgUAAyEGAASHRsPbAAIvFGhvxSXQ_7f8dgjVgK_BM2YfRjpwAAJnGAACXqmBV9T4ikmwc2fkNgQ.png">
+<meta property="og:image" content="https://img.remit.ee/api/file/BQACAgUAAyEGAASHRsPbAAIvFmhvxlJBjB7xySsRLRIxQ-6DQdnAAAJrGAACXqmBV73N-hl-hn31NgQ.png">
+<meta property="article:published_time" content="2025-07-09T16:00:00.000Z">
+<meta property="article:modified_time" content="2025-07-10T14:07:17.963Z">
+<meta property="article:author" content="ALZT02">
+<meta property="article:tag" content="绫地宁宁">
+<meta property="article:tag" content="柚子社">
+<meta property="article:tag" content="魔女的夜宴">
+<meta property="article:tag" content="galgame">
+<meta property="article:tag" content="解包">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://img.remit.ee/api/file/BQACAgUAAyEGAASHRsPbAAIvB2hvteIk7cqCTxi3odYNdiPa7nC5AAKgFQACVtx4V8515ez_nscpNgQ.png">
+
+<link rel="stylesheet" href="../../../../lib/fancybox/fancybox.css">
+<link rel="stylesheet" href="../../../../lib/mdui_043tiny/mdui.css">
+
+
+<link rel="stylesheet" href="../../../../lib/iconfont/iconfont.css?v=1752156559565">
+
+<link rel="stylesheet" href="../../../../css/style.css?v=1752156559565">
+
+
+
+
+
+
+<script src="../../../../lib/mdui_043tiny/mdui.js" async></script>
+<script src="../../../../lib/fancybox/fancybox.umd.js" async></script>
+<script src="../../../../lib/lax.min.js" async></script>
+
+
+<script async src="../../../../js/app.js?v=1752156559565"></script>
+
+ 
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4D4ZJ9G024"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag("js", new Date());
+
+  gtag("config", "G-4D4ZJ9G024");
+</script>
+
+
+<link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/atom-one-dark.min.css">
+<meta name="generator" content="Hexo 7.3.0"></head><body class="nexmoe mdui-drawer-body-left"><div id="nexmoe-background"><div class="nexmoe-bg" style="background-image: url(https://img.remit.ee/api/file/BQACAgUAAyEGAASHRsPbAAIjgGhVOaRSx5NHdeAG9-tRFy-tOhv4AAJeFAACaQipVqDcD4h8mjW5NgQ.jpg)"></div><div class="mdui-appbar mdui-shadow-0"><div class="mdui-toolbar"><a class="mdui-btn mdui-btn-icon mdui-ripple" mdui-drawer="{target: &#039;#drawer&#039;, swipe: true}" title="menu"><i class="mdui-icon nexmoefont icon-menu"></i></a><div class="mdui-toolbar-spacer"></div><a class="mdui-btn mdui-btn-icon" href="../../../../index.html" title="ALZT02"><img src="https://img.remit.ee/api/file/BQACAgUAAyEGAASHRsPbAAIsmWhs6TwBl50HBYkgKtjFGutc3Bo0AAI_GAACfOBgVz1vzikCZHPNNgQ.png" alt="ALZT02"></a></div></div></div><div id="nexmoe-header"><div class="nexmoe-drawer mdui-drawer" id="drawer">
+    <div class="nexmoe-avatar mdui-ripple">
+        <a href="../../../../index.html" title="ALZT02">
+            <img src="https://img.remit.ee/api/file/BQACAgUAAyEGAASHRsPbAAIsmWhs6TwBl50HBYkgKtjFGutc3Bo0AAI_GAACfOBgVz1vzikCZHPNNgQ.png" alt="ALZT02" alt="ALZT02">
+        </a>
+    </div>
+    <div class="nexmoe-count">
+        <div><span>文章</span>5</div>
+        <div><span>标签</span>9</div>
+        <div><span>分类</span>5</div>
+    </div>
+    <div class="nexmoe-list mdui-list" mdui-collapse="{accordion: true}">
+        
+        <a class="nexmoe-list-item mdui-list-item mdui-ripple false" href="../../../../index.html" title="回到首页">
+            <i class="mdui-list-item-icon nexmoefont icon-home"></i>
+            <div class="mdui-list-item-content">
+                回到首页
+            </div>
+        </a>
+        
+        <a class="nexmoe-list-item mdui-list-item mdui-ripple false" href="../../../../archives" title="文章归档">
+            <i class="mdui-list-item-icon nexmoefont icon-container"></i>
+            <div class="mdui-list-item-content">
+                文章归档
+            </div>
+        </a>
+        
+        <a class="nexmoe-list-item mdui-list-item mdui-ripple false" href="../../../../friends" title="我的朋友">
+            <i class="mdui-list-item-icon nexmoefont icon-unorderedlist"></i>
+            <div class="mdui-list-item-content">
+                我的朋友
+            </div>
+        </a>
+        
+        <a class="nexmoe-list-item mdui-list-item mdui-ripple false" href="https://space.bilibili.com/3461569786677872" title="给我赞助">
+            <i class="mdui-list-item-icon nexmoefont icon-coffee"></i>
+            <div class="mdui-list-item-content">
+                给我赞助
+            </div>
+        </a>
+        
+        <a class="nexmoe-list-item mdui-list-item mdui-ripple false" href="https://space.bilibili.com/3461569786677872" title="关于博主">
+            <i class="mdui-list-item-icon nexmoefont icon-info-circle"></i>
+            <div class="mdui-list-item-content">
+                关于博主
+            </div>
+        </a>
+        
+    </div>
+    
+    
+        
+        <div class="nexmoe-widget-wrap">
+    <div class="nexmoe-widget nexmoe-search">
+         
+            <form id="search_form" action_e="https://cn.bing.com/search?q=site:alzt02.github.io" onsubmit="return search();">
+                <label><input id="search_value" name="q" type="search" placeholder="搜索"></label>
+            </form>
+         
+    </div>
+</div>
+
+
+
+
+    
+        
+        <div class="nexmoe-widget-wrap">
+	<div class="nexmoe-widget nexmoe-social">
+		<a
+			class="mdui-ripple"
+			href="https://jq.qq.com/404"
+			target="_blank"
+			mdui-tooltip="{content: 'QQ群'}"
+			style="
+				color: rgb(249, 174, 8);
+				background-color: rgba(249, 174, 8, .1);
+			"
+		>
+			<i
+				class="nexmoefont icon-QQ"
+			></i> </a
+		><a
+			class="mdui-ripple"
+			href="https://space.bilibili.com/3461569786677872"
+			target="_blank"
+			mdui-tooltip="{content: '哔哩哔哩'}"
+			style="
+				color: rgb(231, 106, 141);
+				background-color: rgba(231, 106, 141, .1);
+			"
+		>
+			<i
+				class="nexmoefont icon-bilibili"
+			></i> </a
+		><a
+			class="mdui-ripple"
+			href="https://github.com/ALZT02"
+			target="_blank"
+			mdui-tooltip="{content: 'GitHub'}"
+			style="
+				color: rgb(25, 23, 23);
+				background-color: rgba(25, 23, 23, .1);
+			"
+		>
+			<i
+				class="nexmoefont icon-github"
+			></i> </a
+		><a
+			class="mdui-ripple"
+			href="https://www.zhihu.com/404"
+			target="_blank"
+			mdui-tooltip="{content: '知乎'}"
+			style="
+				color: rgb(30, 136, 229);
+				background-color: rgba(30, 136, 229, .1);
+			"
+		>
+			<i
+				class="nexmoefont icon-zhihu"
+			></i> </a
+		><a
+			class="mdui-ripple"
+			href="https://twitter.com/404"
+			target="_blank"
+			mdui-tooltip="{content: 'Twitter'}"
+			style="
+				color: rgb(59, 151, 239);
+				background-color: rgba(59, 151, 239, .1);
+			"
+		>
+			<i
+				class="nexmoefont icon-twitter"
+			></i> </a
+		><a
+			class="mdui-ripple"
+			href="https://404"
+			target="_blank"
+			mdui-tooltip="{content: 'RSS'}"
+			style="
+				color: rgb(247, 132, 34);
+				background-color: rgba(247, 132, 34, .1);
+			"
+		>
+			<i
+				class="nexmoefont icon-rss"
+			></i> </a
+		>
+	</div>
+</div>
+
+    
+        
+        
+  <div class="nexmoe-widget-wrap">
+    <h3 class="nexmoe-widget-title">文章分类</h3>
+    <div class="nexmoe-widget">
+
+      <ul class="category-list">
+
+        
+
+
+        
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/杂谈/二次元/">二次元</a>
+          <span class="category-list-count">2</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/技术/">技术</a>
+          <span class="category-list-count">1</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/杂谈/">杂谈</a>
+          <span class="category-list-count">2</span>
+        </li>
+
+        
+      </ul>
+
+    </div>
+  </div>
+
+
+    
+        
+        
+  <div class="nexmoe-widget-wrap">
+    <div id="randomtagcloud" class="nexmoe-widget tagcloud nexmoe-rainbow">
+      <a href="../../../../tags/Hexo/" style="font-size: 10px;">Hexo</a> <a href="../../../../tags/galgame/" style="font-size: 15px;">galgame</a> <a href="../../../../tags/%E5%9B%BE%E7%89%87/" style="font-size: 20px;">图片</a> <a href="../../../../tags/%E5%B0%8F%E8%AF%B4/" style="font-size: 10px;">小说</a> <a href="../../../../tags/%E6%9F%9A%E5%AD%90%E7%A4%BE/" style="font-size: 15px;">柚子社</a> <a href="../../../../tags/%E7%B4%AB%E7%BD%97%E5%85%B0%E7%9A%84%E5%A0%99%E7%81%AD/" style="font-size: 10px;">紫罗兰的堙灭</a> <a href="../../../../tags/%E7%BB%AB%E5%9C%B0%E5%AE%81%E5%AE%81/" style="font-size: 15px;">绫地宁宁</a> <a href="../../../../tags/%E8%A7%A3%E5%8C%85/" style="font-size: 10px;">解包</a> <a href="../../../../tags/%E9%AD%94%E5%A5%B3%E7%9A%84%E5%A4%9C%E5%AE%B4/" style="font-size: 15px;">魔女的夜宴</a>
+    </div>
+    
+      <script>
+        var maxTagcloud = parseInt(50);
+        var tags_length = parseInt(9);
+        var tags_arr = [];
+        for(var i = 0; i < tags_length; i++){
+          tags_arr.push(i);
+        }
+        tags_arr.sort(function (l, r) {
+          return Math.random() > 0.5 ? -1 : 1;
+        });
+        tags_arr = tags_arr.slice(0, maxTagcloud < tags_length ? tags_length - maxTagcloud : 0);
+        for(var tag_i = 0; tag_i < tags_arr.length; tag_i++){
+          document.getElementById("randomtagcloud").children[tags_arr[tag_i]].style.display = 'none';
+        }
+      </script>
+    
+  </div>
+
+    
+        
+        <!-- 一言 -->
+<div class="nexmoe-widget-wrap">
+  <h3 class="nexmoe-widget-title">
+    一言
+  </h3>
+  <div class="nexmoe-widget">
+    <ul class="hitokoto-box">
+      <li id="hitokoto_text_parent" class="hitokoto-text" hitokotoCategory="">
+        <a href="#" id="hitokoto_text">
+          
+        </a>
+        <a href="#" id="hitokoto_error_text" style="display: none;">
+          
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<script>
+  let hitokotoText = document.getElementById('hitokoto_text')
+  let hitokotoErroText = document.getElementById('hitokoto_error_text')
+  let hitokotoCategory = document.getElementById('hitokoto_text_parent').getAttribute('hitokotoCategory')
+  window.addEventListener('load', function () {
+    let url = 'https://v1.hitokoto.cn'
+    if (hitokotoCategory) {
+      url += '?c=' + hitokotoCategory
+    }
+    fetch(url)
+      .then(response => response.json())
+      .then(data => {
+        hitokotoText.innerText = "「 " + data.hitokoto + " 」 from " + data.from
+        hitokotoText.href = 'https://hitokoto.cn/?uuid=' + data.uuid
+      })
+      .catch((reason) => {
+        console.error(11, reason)
+        hitokotoText.style.display = 'none'
+        hitokotoErroText.style.display = 'block'
+      })
+  })
+</script>
+    
+        
+        
+  <div class="nexmoe-widget-wrap">
+    <h3 class="nexmoe-widget-title">文章归档</h3>
+    <div class="nexmoe-widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="../../../../archives/2025/">2025</a><span class="archive-list-count">5</span></li></ul>
+    </div>
+  </div>
+
+
+
+    
+        
+        
+  <div class="nexmoe-widget-wrap">
+    <h3 class="nexmoe-widget-title">最新文章</h3>
+    <div class="nexmoe-widget">
+      <ul>
+        
+          <li>
+            <a href="../../21/%E5%AE%81%E5%AE%81/">赞美绫地宁宁</a>
+          </li>
+        
+          <li>
+            <a href="">Galgame解包</a>
+          </li>
+        
+          <li>
+            <a href="../../../06/26/novel1/">紫罗兰的堙灭-第一卷-第一篇-第一章</a>
+          </li>
+        
+          <li>
+            <a href="../../../06/19/1/">测试</a>
+          </li>
+        
+          <li>
+            <a href="../../../06/19/2/">测试</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+    
+        
+        <div class="nexmoe-widget-wrap">
+    <div class="nexmoe-widget nexmoe-link">
+		<ul>
+        
+            <li>
+                <a href="https://0d00.com.cn/" target="_blank" >
+                    <img src="https://img.remit.ee/api/file/BQACAgUAAyEGAASHRsPbAAIjfWhVNuxlBxm2TgABVOq-rysF9U9CcQACPBQAAmkIqVYWzBfcEHMN9TYE.png" alt="这里放只宁宁"></img>
+                    <p>这里放只宁宁</p>
+                </a>
+            </li>
+        
+		</ul>
+    </div>
+</div>
+<style>
+.nexmoe-widget-wrap .nexmoe-link ul li a {
+    text-align : center;
+}
+.nexmoe-widget-wrap .nexmoe-link ul li a img {
+    max-width : 100%;
+}
+.nexmoe-widget-wrap .nexmoe-link ul li a p {
+    margin: 10px 0;
+}
+</style>
+
+    
+        
+        <div class="card widget">
+  <div class="card-content">
+    <h3 class="menu-label">
+      <i class="nexmoefont icon-music"></i> 
+      推荐歌曲
+    </h3>
+    
+    <div class="netease-music">
+      <iframe 
+        frameborder="no" 
+        border="0" 
+        marginwidth="0" 
+        marginheight="0" 
+        width="100%" 
+        height="86" 
+        src="//music.163.com/outchain/player?type=2&id=1907125216&auto=1&height=66">
+      </iframe>
+    </div>
+  </div>
+</div>
+    
+   
+    <div class="nexmoe-copyright">
+        &copy; 2025 ALZT02
+        Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+        & <a href="https://github.com/theme-nexmoe/hexo-theme-nexmoe" target="_blank">Nexmoe</a>
+        <br><a href="https://icp.gov.moe/?keyword=20257021" target="_blank">
+  <img src="https://img.remit.ee/api/file/BQACAgUAAyEGAASHRsPbAAIsomhtGR6hQhzOfTohavQraXcJC1obAAJvFQACfOBoVwV4jgUigOusNgQ.png" alt="png" style="height:1em; vertical-align:middle; margin-right:2px;">
+  萌ICP备20257021号
+</a>
+<br><a target="_blank" href="https://t.alcy.cc/ycy">
+<img src="https://img.remit.ee/api/file/BQACAgUAAyEGAASHRsPbAAIjhmhVQvayYwF9BHqwBeqg8DwcWZBxAAJ7FAACaQipVlnJekVTfDKsNgQ.png" width="200px"></a>
+
+<div class="sidebar-copyright">
+  点击宁宁查看随机美图    <br>
+  © 2025-今 𝑨𝒍𝒛𝒕´𝑹𝒆𝒂𝒍𝒎-𝑵𝒆𝒙𝒎𝒐𝒆
+</div>
+
+    </div>
+</div><!-- .nexmoe-drawer --></div><div id="nexmoe-content"><div class="nexmoe-primary"><div class="nexmoe-post">
+  <article>
+    
+        <div class="nexmoe-post-cover absolute" style="padding-top: 56.25%;"> 
+            <img src="https://img.remit.ee/api/file/BQACAgUAAyEGAASHRsPbAAIsm2hs9FHDc_9Eh94ci5CdwW7-mhdKAALvFAACfOBoV5Ocr6xNmxKjNgQ.png" alt="Galgame解包" loading="lazy">
+            <h1>Galgame解包</h1>
+        </div>
+    
+    
+    <div class="nexmoe-post-meta">
+    <div class="nexmoe-rainbow">
+        <a class="nexmoefont icon-calendar-fill">2025年07月10日</a>
+        
+            <a class="nexmoefont icon-appstore-fill -link" href="../../../../categories/%E6%8A%80%E6%9C%AF/">技术</a><a class="nexmoefont icon-appstore-fill -link" href="../../../../categories/%E6%8A%80%E6%9C%AF/%E6%9D%82%E8%B0%88/">杂谈</a><a class="nexmoefont icon-appstore-fill -link" href="../../../../categories/%E6%8A%80%E6%9C%AF/%E6%9D%82%E8%B0%88/%E4%BA%8C%E6%AC%A1%E5%85%83/">二次元</a>
+        
+        
+    <a><i class="nexmoefont icon-areachart"></i>约2.3k字</a>
+    <a><i class="nexmoefont icon-time-circle-fill"></i>预计需要8分钟</a>
+
+    </div>
+    
+    
+    
+    
+    
+</div>
+
+    <h1 id="Galgame解包"><a href="#Galgame解包" class="headerlink" title="Galgame解包"></a>Galgame解包</h1><h2 id="写在前面"><a href="#写在前面" class="headerlink" title="写在前面"></a>写在前面</h2><p><mark>注意：本篇教程仅供参考学习，学习后请于24小时内删除学习成果。禁止传播学习文件，本文作者不负任何可能的法律责任。</mark></p>
+<p>本文教程至少适用于YuzuSoft的所有作品（截至2025.7.10）。教程仅适用于含.xp3的galgame的解包。</p>
+<p>成果示例 以下为游戏原声文件</p>
+
+<iframe 
+  src="/audio_players/部分gal的解包/player.html" 
+  style="width:100%; height:220px; border:none;"
+></iframe>
+
+
+<iframe 
+  src="/audio_players/部分gal的解包/player2.html" 
+  style="width:100%; height:220px; border:none;"
+></iframe>
+
+
+<iframe 
+  src="/audio_players/部分gal的解包/player1.html" 
+  style="width:100%; height:220px; border:none;"
+></iframe>
+
+
+<ul>
+<li>本文所用到的工具（注意，二次转发需要署名！！）</li>
+</ul>
+<p><a href="https://www.123684.com/s/CkJ2Td-v7khh?%E6%8F%90%E5%8F%96%E7%A0%81:0721">https://www.123684.com/s/CkJ2Td-v7khh?提取码:0721</a>   </p>
+<p>下载后需要按照以下方式解压</p>
+<ol>
+<li><p>修改后缀名为.zip</p>
+</li>
+<li><p>输入密码 Yuzusoft0d00072120257021ciallo@ 解压</p>
+</li>
+<li><p>将解压出的文件修改后缀名为.7z</p>
+</li>
+<li><p>解压修改完后缀名的文件即可。</p>
+</li>
+</ol>
+<p>部分教程已经详细地写在工具包里了，游戏资源自行去搜。</p>
+<h2 id="什么是”包”和”解包”？"><a href="#什么是”包”和”解包”？" class="headerlink" title="什么是”包”和”解包”？"></a>什么是”包”和”解包”？</h2><p>众所周知，游戏厂商做游戏的根本目的是为了<del>赚钱</del>。倘若直接公开游戏内部文件如源码，音频，图片等资源，则会<del>动资本的蛋糕</del>，影响<del>赚钱</del>。各大游戏厂商为了防止自己游戏的源文件泄露给自己造成损失，于是在整合游戏资源的同时进行了一定的加密。整合文件被称作”包”，而拆解这个包，得到游戏源文件的过程叫做”拆包”或”解包“。通常情况下，拆包需要解密，而解密需要密钥。那么密钥该如何获取呢？</p>
+<p>游戏厂家肯定把游戏密钥储存在游戏内。若储存在线上则更容易被抓包爬虫获取。通过程序注入游戏进程进行动态捕捉即可捕获密钥。所以拆包的核心在于获取密钥。有些游戏没有官中，于是伟大的汉化组自己拆包，汉化，组合，加密手段也会随之改变，我们则需要新的密钥。</p>
+<p>所以我提供的<mark>工具最重要的作用就是获取密钥</mark>。<em>XP3Viewer</em>是暴力破解密钥，旧krkr自带的加密在XP3Viewer前不堪一击。但需要注意的是，仅仅限于2016年前的作品，对2016年以后的作品和2016年以后的汉化游戏没用。但尝试总是可贵的，万一有小厂家加密手段很薄弱呢？<em>KrkrExtract</em>和<em>GARbro</em>是通过历代大佬积累的密钥和解包手段汇集而成的，对游戏原版文件有奇效，但对汉化组的加密就不行了。<em>KrKrDump</em>是人挡杀人，佛挡杀佛，直接根据游戏进程捕获内存密钥解包，遇到什么解什么，理论上可以全部解包(前提是跑完整个游戏流程，语音的提取需要跑完整条语音)。</p>
+<hr>
+<p>在galgame厂商中使用最广泛的游戏制作引擎是unity和krkr。unity的好说，<em>AssetStudio</em>一下子就能全解开。而使用krkr的就比较麻烦了。本文主要讲关于krkr的解包方式。</p>
+<p>那么如何确认自己的galgame是krkr游戏呢？很简单，打开游戏目录，<mark>含有.xp3文件的就是使用krkr引擎制作的游戏了</mark>。</p>
+<h2 id="一般的解包步骤"><a href="#一般的解包步骤" class="headerlink" title="一般的解包步骤"></a>一般的解包步骤</h2><h3 id="1-确认游戏会社-检查资源完整性"><a href="#1-确认游戏会社-检查资源完整性" class="headerlink" title="1.确认游戏会社,检查资源完整性"></a>1.确认游戏会社,检查资源完整性</h3><p>先对比md5，再自行百度作品，找到游戏会社。若游戏会社规模较小，可直接尝试使用XP3Viewer解包。老游戏（发布日期小于2016）的也可使用。若会社规模较大如YuzuSoft，尝试使用GARbro和KrkrExtract解包。以上手段都不行再使用KrKrDump。</p>
+<p>对于汉化组汉化的游戏或者经过代理(发行，本地化)商（比如株式会社 HIKARI FIELD）二次加密的游戏，无视以上所有规则，直接使用KrKrDump。</p>
+<p>若游戏目录没有adult.xp3（r18内容)，可自行前往<a href="https://www.moyu.moe/%E6%88%96https://patches.nekonyansoft.com/%E4%B8%8B%E8%BD%BD%E8%A1%A5%E4%B8%81%EF%BC%8C%E8%A7%A3%E5%8E%8B%E5%90%8E%E7%BD%AE%E4%BA%8E%E6%B8%B8%E6%88%8F%E7%9B%AE%E5%BD%95%E3%80%82">https://www.moyu.moe/或https://patches.nekonyansoft.com/下载补丁，解压后置于游戏目录。</a></p>
+<p><mark>若你的游戏是steam正版，不要使用</mark>。这会影响程序注入。推荐下载民间破解版。</p>
+<h3 id="2-下载工具并尝试解包"><a href="#2-下载工具并尝试解包" class="headerlink" title="2.下载工具并尝试解包"></a>2.下载工具并尝试解包</h3><p>正如上文所提，老游戏或小游戏会社游戏尝试使用XP3Viewer解包，再按照GARbro-KrkrExtract-KrKrDump的顺序依次尝试，直至成功。</p>
+<h4 id="2-1如何解包"><a href="#2-1如何解包" class="headerlink" title="2.1如何解包"></a>2.1如何解包</h4><ul>
+<li>xp3viewer</li>
+</ul>
+<p>将xp3viewer.exe和xp3viewer.dll同置于游戏根目录，将游戏的.exe文件拖到xp3viewer.exe上。若成功，将会出现两个窗口，一是游戏窗口，二是xp3viewer的窗口。对于某些游戏会自动解包，对于另外的游戏需要拖.xp3文件到这个窗口上。在游戏根目录下会出现新的文件夹，即解包内容。若只出现一个窗口或解压出乱码文件，则失败。</p>
+<ul>
+<li>GARbro</li>
+</ul>
+<p><em>注意，仅仅适用于无二次加密或汉化组的游戏</em>。打开garbro。切换到对应游戏目录。这里以亚托莉-我挚爱的时光-为例</p>
+<p><img src="https://img.remit.ee/api/file/BQACAgUAAyEGAASHRsPbAAIvB2hvteIk7cqCTxi3odYNdiPa7nC5AAKgFQACVtx4V8515ez_nscpNgQ.png"></p>
+<p>主要文件在data.xp3内。也有文件被分到其他.xp3文件。双击data.xp3</p>
+<p><img src="https://img.remit.ee/api/file/BQACAgUAAyEGAASHRsPbAAIvCGhvt1K6QBqfFccm6-HGEQk9BhQYAAKiFQACVtx4V27vAAG8TEauAzYE.png"></p>
+<p>若可能有加密，选择恰当的加密（这里没有加密）。点击确定。</p>
+<p><img src="https://img.remit.ee/api/file/BQACAgUAAyEGAASHRsPbAAIvCWhvt6opjpAdEZITe2GcvmY0eJs2AAKjFQACVtx4V8CpXC7n5BDPNgQ.png"></p>
+<p>出现类似这个界面即为成功。若出现乱码则为失败。</p>
+<p>进入想要提取的文件夹，右击提取。若提示无效的文件格式，则需要刷新后选择恰当的加密，实在不行解密失败。</p>
+<ul>
+<li>KrkrExtract</li>
+</ul>
+<p>将KrkrExtract.Lite.exe和KrkrExtract.Core.dll和KrkrExtract.UI.dll同置于游戏根目录。这里以亚托莉-我挚爱的时光-为例</p>
+<p><img src="https://img.remit.ee/api/file/BQACAgUAAyEGAASHRsPbAAIvC2hvuk1M-jOCqtQaUSzXsLqNoahnAAI5GAACXqmBV9DBjaAXoYpzNgQ.png"></p>
+<p>将游戏文件拖到KrkrExtract.Lite.exe上。若成功，将会出现两个窗口，一是游戏窗口，二是KrkrExtract的窗口。可能需要等待一段时间窗口才出现。</p>
+<p>勾选PSB Package内的 <mark>full unpack</mark>，将需要解包的.xp3文件拖到此窗口，点击!!Dump!!，等待跑条完成。</p>
+<p><img src="https://img.remit.ee/api/file/BQACAgUAAyEGAASHRsPbAAIvDmhvu_fNjQ2exBLN6iGhDKtZ187nAAI-GAACXqmBV2ouDRGHGgT6NgQ.png"></p>
+<p>可见出现KrkrExtract_Output文件夹，内存解包文件。同样的，主要文件在data.xp3内。也有文件被分到其他.xp3文件。</p>
+<p>若点击!!Dump!!，下面的小窗口内出现乱码文件即解包失败。</p>
+<ul>
+<li>KrKrDump</li>
+</ul>
+<p>将KrkrDumpLoader.exe和KrkrDump.dll同置于游戏根目录。在游戏根目录下创建KrKrDump.json文件并编辑</p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">    <span class="attr">&quot;loglevel&quot;</span><span class="punctuation">:</span> <span class="number">1</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;enableExtract&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">true</span></span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;outputDirectory&quot;</span><span class="punctuation">:</span> <span class="string">&quot;F:\\game\\sanoba witch\\dump&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;rules&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span></span><br><span class="line">        <span class="string">&quot;file://\\./.+?\\.xp3&gt;(.+?\\..+$)&quot;</span><span class="punctuation">,</span></span><br><span class="line">        <span class="string">&quot;archive://./(.+)&quot;</span><span class="punctuation">,</span></span><br><span class="line">        <span class="string">&quot;arc://./(.+)&quot;</span><span class="punctuation">,</span></span><br><span class="line">        <span class="string">&quot;bres://./(.+)&quot;</span></span><br><span class="line">    <span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;includeExtensions&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span><span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;excludeExtensions&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span></span><br><span class="line">        <span class="string">&quot;.ogg&quot;</span></span><br><span class="line">    <span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;decryptSimpleCrypt&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">true</span></span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure>
+
+<p>其中”outputDirectory”:后的引号中替换为你的实际游戏路径，注意保留双斜线和dump（可自定义)。其他的不要动，否则会报错。保存并退出。</p>
+<p>将</p>
+<p>将游戏的.exe文件拖到KrkrDumpLoader.exe上。若成功，将会出现两个窗口，一是游戏窗口，二是KrkrDumpLoader.exe的cmd全黑窗口。这时进入游戏，点击开始游戏，开始游玩。开启autoplay模式，挂后台等待几小时。遇到选项就选，需要什么线路的资源就推什么线。</p>
+<p><img src="https://img.remit.ee/api/file/BQACAgUAAyEGAASHRsPbAAIvEGhvvqlwEpDeFMw_iHM8y-amSncRAAJEGAACXqmBV3N7prcyw20vNgQ.png"></p>
+<p>可见游戏根目录下出现dump文件夹。<mark><strong>一定要将游戏在后台跑完才能保证资源的完整</strong></mark>。该方法支持续拆。该方法不可能失败。</p>
+<h3 id="3-进一步的拆包"><a href="#3-进一步的拆包" class="headerlink" title="3.进一步的拆包"></a>3.进一步的拆包</h3><ul>
+<li>.tlg文件</li>
+</ul>
+<p>.tlg文件是储存立绘的文件。使用garbro将.tlg文件转换成普通图像格式。</p>
+<p><img src="https://img.remit.ee/api/file/BQACAgUAAyEGAASHRsPbAAIvEWhvwEVe2SN1O5tXRHn9Xhqzut-hAAJLGAACXqmBVyG3a8h7Cd0XNgQ.png"></p>
+<p>单击文件，按住鼠标左键不要松手，拖到你想转换的最后一个文件。</p>
+<p><img src="https://img.remit.ee/api/file/BQACAgUAAyEGAASHRsPbAAIvEmhvwRME11ikRkCpF64CxTzv3cPhAAJRGAACXqmBV_NbPBA8neo3NgQ.png"></p>
+<p>点击右键，选择转换多媒体文件，点击。按照提示选择目标文件类型和目标文件夹，点击确定即可转换。</p>
+<ul>
+<li>.mtn文件</li>
+</ul>
+<p>.tlg文件是储存SD Q版小人的文件。使用garbro将.mtn文件转换成普通图像格式。同上。但需要注意，一份.mtn文件内储存多个图像。</p>
+<ul>
+<li>.pimg文件</li>
+</ul>
+<p>.pimg文件是储存CG的文件。使用FreeMoteViewer将.pimg文件转换成普通图像格式。需要注意，一份.pimg文件内储存多个图像。</p>
+<p>先将.pimg文件置于独立目录，再将.pimg文件拖到FreeMoteViewer目录下的PsbDecompile.exe上。</p>
+<p><img src="https://img.remit.ee/api/file/BQACAgUAAyEGAASHRsPbAAIvE2hvw4LtEoB9nDb2UWGUhVZTEN6iAAJjGAACXqmBVyZuIz5YyePbNgQ.png"></p>
+<p>黑色窗口消失后，可见独立目录下拆分出两个规则文件和一个文件夹。文件夹内即为cg文件。</p>
+<h3 id="4-立绘和CG的整合"><a href="#4-立绘和CG的整合" class="headerlink" title="4.立绘和CG的整合"></a>4.立绘和CG的整合</h3><p>大部分游戏会只使用一张立绘或CG的底图，其余为表情差分。若你会PS，当我没说以下的话。若你懂得利用规则文件合成立绘CG，那也当我没说。若你都不会，那么使用AutoCGAligner整合CG和立绘。</p>
+<p><img src="https://img.remit.ee/api/file/BQACAgUAAyEGAASHRsPbAAIvFGhvxSXQ_7f8dgjVgK_BM2YfRjpwAAJnGAACXqmBV9T4ikmwc2fkNgQ.png"></p>
+<p>打开AutoCGAligner，点击批量合成。将背景或底图拖到左侧白框并点一下，将所有差分拖到右侧白框。选择精确模式，选择好保存路径，点击开始合成。耐心等待进度条跑完。跑的很慢，但成果特别好。</p>
+<p>以下是其中一张图片</p>
+<p><img src="https://img.remit.ee/api/file/BQACAgUAAyEGAASHRsPbAAIvFmhvxlJBjB7xySsRLRIxQ-6DQdnAAAJrGAACXqmBV73N-hl-hn31NgQ.png"></p>
+<hr>
+<p>好了，以上就是全部教程，希望能够帮到你。若你觉得文章有用，在评论区多多评论吧！或者你可以评论数字1-4，分别对应下图蕾娜的表情。</p>
+
+    <p><img src="https://img.remit.ee/api/file/BQACAgUAAyEGAASHRsPbAAIjIWhUAYaV0-LCSs_Wr_cYmKg_mqt6AALRFgACP2egVqZkUVywqfaGNgQ.jpg" loading="lazy"></p>
+
+  </article>
+
+  
+      
+    <div class="nexmoe-post-copyright">
+        <strong>本文作者：</strong>ALZT02<br>
+        <strong>本文链接：</strong><a href="https://alzt02.github.io/2025/07/10/%E9%83%A8%E5%88%86gal%E7%9A%84%E8%A7%A3%E5%8C%85/" title="https:&#x2F;&#x2F;alzt02.github.io&#x2F;2025&#x2F;07&#x2F;10&#x2F;%E9%83%A8%E5%88%86gal%E7%9A%84%E8%A7%A3%E5%8C%85&#x2F;" target="_blank" rel="noopener">https:&#x2F;&#x2F;alzt02.github.io&#x2F;2025&#x2F;07&#x2F;10&#x2F;%E9%83%A8%E5%88%86gal%E7%9A%84%E8%A7%A3%E5%8C%85&#x2F;</a><br>
+        
+            <strong>版权声明：</strong>本文采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/cn/deed.zh" target="_blank">CC BY-NC-SA 3.0 CN</a> 协议进行许可
+
+        
+    </div>
+
+
+  
+  
+  <div class="nexmoe-post-meta nexmoe-rainbow">
+   
+    
+        <a class="nexmoefont icon-tag-fill -none-link" href="../../../../tags/galgame/" rel="tag">galgame</a> <a class="nexmoefont icon-tag-fill -none-link" href="../../../../tags/%E6%9F%9A%E5%AD%90%E7%A4%BE/" rel="tag">柚子社</a> <a class="nexmoefont icon-tag-fill -none-link" href="../../../../tags/%E7%BB%AB%E5%9C%B0%E5%AE%81%E5%AE%81/" rel="tag">绫地宁宁</a> <a class="nexmoefont icon-tag-fill -none-link" href="../../../../tags/%E8%A7%A3%E5%8C%85/" rel="tag">解包</a> <a class="nexmoefont icon-tag-fill -none-link" href="../../../../tags/%E9%AD%94%E5%A5%B3%E7%9A%84%E5%A4%9C%E5%AE%B4/" rel="tag">魔女的夜宴</a>
+    
+</div>
+  
+  
+    <script async src="../../../../js/copy-codeblock.js?v=1752156559451"></script>
+  
+
+  
+      <div class="nexmoe-post-footer">
+          <script src="https://giscus.app/client.js"
+      data-repo="ALZT02/ALZT02.github.io"
+      data-repo-id="R_kgDOO-UUWQ"
+      data-category="Announcements"
+      data-category-id="DIC_kwDOO-UUWc4Crwg2"
+      data-mapping="pathname"
+      data-strict="0"
+      data-reactions-enabled="1"
+      data-emit-metadata="0"
+      data-input-position="top"
+      data-theme="preferred_color_scheme"
+      data-lang="zh-CN"
+      crossorigin="anonymous"
+      async>
+</script>
+
+      </div>
+  
+</div></div><div class="nexmoe-post-right">    <div class="nexmoe-fixed">
+        <div class="nexmoe-tool">
+
+            
+
+            
+            
+            <button class="mdui-fab catalog" style="overflow:unset;">
+                <i class="nexmoefont icon-i-catalog"></i>
+                <div class="nexmoe-toc">
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Galgame%E8%A7%A3%E5%8C%85"><span class="toc-number">1.</span> <span class="toc-text">Galgame解包</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%86%99%E5%9C%A8%E5%89%8D%E9%9D%A2"><span class="toc-number">1.1.</span> <span class="toc-text">写在前面</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF%E2%80%9D%E5%8C%85%E2%80%9D%E5%92%8C%E2%80%9D%E8%A7%A3%E5%8C%85%E2%80%9D%EF%BC%9F"><span class="toc-number">1.2.</span> <span class="toc-text">什么是”包”和”解包”？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E8%88%AC%E7%9A%84%E8%A7%A3%E5%8C%85%E6%AD%A5%E9%AA%A4"><span class="toc-number">1.3.</span> <span class="toc-text">一般的解包步骤</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E7%A1%AE%E8%AE%A4%E6%B8%B8%E6%88%8F%E4%BC%9A%E7%A4%BE-%E6%A3%80%E6%9F%A5%E8%B5%84%E6%BA%90%E5%AE%8C%E6%95%B4%E6%80%A7"><span class="toc-number">1.3.1.</span> <span class="toc-text">1.确认游戏会社,检查资源完整性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E4%B8%8B%E8%BD%BD%E5%B7%A5%E5%85%B7%E5%B9%B6%E5%B0%9D%E8%AF%95%E8%A7%A3%E5%8C%85"><span class="toc-number">1.3.2.</span> <span class="toc-text">2.下载工具并尝试解包</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#2-1%E5%A6%82%E4%BD%95%E8%A7%A3%E5%8C%85"><span class="toc-number">1.3.2.1.</span> <span class="toc-text">2.1如何解包</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E8%BF%9B%E4%B8%80%E6%AD%A5%E7%9A%84%E6%8B%86%E5%8C%85"><span class="toc-number">1.3.3.</span> <span class="toc-text">3.进一步的拆包</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-%E7%AB%8B%E7%BB%98%E5%92%8CCG%E7%9A%84%E6%95%B4%E5%90%88"><span class="toc-number">1.3.4.</span> <span class="toc-text">4.立绘和CG的整合</span></a></li></ol></li></ol></li></ol>
+                </div>
+            </button>
+            
+
+            
+
+            <a href="#nexmoe-content" class="backtop toc-link" aria-label="Back To Top" title="top"><button class="mdui-fab mdui-ripple"><i class="nexmoefont icon-caret-top"></i></button></a>
+        </div>
+    </div>
+</div></div><div id="nexmoe-footer"><!--!--></div><div id="nexmoe-search-space"><div class="search-container"><div class="search-header"><div class="search-input-container"><input class="search-input" type="text" placeholder="搜索" onInput="sinput();"></div><a class="search-close" onclick="sclose();">×</a></div><div class="search-body"></div></div></div><div><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2058306854838448" crossorigin="anonymous"></script>
+
+<div class="footer-copyright">
+  <a href="https://icp.gov.moe/?keyword=20257021" target="_blank">萌ICP备20257021号</a><br />
+  © 2025 𝑨𝒍𝒛𝒕´𝑹𝒆𝒂𝒍𝒎-𝑵𝒆𝒙𝒎𝒐𝒆 | Crafted with <span style="color:#e74c3c">❤</span> by ALZT02
+</div>
+</div></body></html>
