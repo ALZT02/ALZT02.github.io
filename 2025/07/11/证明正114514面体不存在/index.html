@@ -14,7 +14,7 @@
 <meta property="og:description" content="在三维欧几里得空间中，正多面体（也称为柏拉图立体）是指所有面都是全等的正多边形、所有顶点性质相同（即每个顶点处的面数、边数相同）的凸多面体。根据经典的几何定理，只有五种正多面体存在：正四面体（4个面）、正六面体（立方体，6个面）、正八面体（8个面）、正十二面体（12个面）和正二十面体（20个面）。面数为114514的正多面体不存在，以下是详细证明。 证明步骤正多面体的存在性受两个关键条件约束：欧拉">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2025-07-10T16:00:00.000Z">
-<meta property="article:modified_time" content="2025-07-11T12:51:44.726Z">
+<meta property="article:modified_time" content="2025-07-11T13:03:31.667Z">
 <meta property="article:author" content="ALZT02">
 <meta name="twitter:card" content="summary">
 
@@ -22,9 +22,9 @@
 <link rel="stylesheet" href="../../../../lib/mdui_043tiny/mdui.css">
 
 
-<link rel="stylesheet" href="../../../../lib/iconfont/iconfont.css?v=1752238341341">
+<link rel="stylesheet" href="../../../../lib/iconfont/iconfont.css?v=1752239050512">
 
-<link rel="stylesheet" href="../../../../css/style.css?v=1752238341341">
+<link rel="stylesheet" href="../../../../css/style.css?v=1752239050512">
 
 
 
@@ -36,7 +36,7 @@
 <script src="../../../../lib/lax.min.js" async></script>
 
 
-<script async src="../../../../js/app.js?v=1752238341341"></script>
+<script async src="../../../../js/app.js?v=1752239050512"></script>
 
  
 
@@ -476,8 +476,8 @@
             <a class="nexmoefont icon-appstore-fill -link" href="../../../../categories/%E6%8A%80%E6%9C%AF/">技术</a>
         
         
-    <a><i class="nexmoefont icon-areachart"></i>约1.4k字</a>
-    <a><i class="nexmoefont icon-time-circle-fill"></i>预计需要6分钟</a>
+    <a><i class="nexmoefont icon-areachart"></i>约761字</a>
+    <a><i class="nexmoefont icon-time-circle-fill"></i>预计需要3分钟</a>
 
     </div>
     
@@ -488,44 +488,38 @@
 </div>
 
     <p>在三维欧几里得空间中，正多面体（也称为柏拉图立体）是指所有面都是全等的正多边形、所有顶点性质相同（即每个顶点处的面数、边数相同）的凸多面体。根据经典的几何定理，只有五种正多面体存在：正四面体（4个面）、正六面体（立方体，6个面）、正八面体（8个面）、正十二面体（12个面）和正二十面体（20个面）。面数为114514的正多面体不存在，以下是详细证明。</p>
-<h3 id="证明步骤"><a href="#证明步骤" class="headerlink" title="证明步骤"></a>证明步骤</h3><p>正多面体的存在性受两个关键条件约束：欧拉公式和角度和条件。设正多面体的每个面为正 (p) 边形（(p \geq 3)），每个顶点处有 (q) 个面相交（(q \geq 3)）。记 (F) 为面数，(E) 为边数，(V) 为顶点数。</p>
+<h3 id="证明步骤"><a href="#证明步骤" class="headerlink" title="证明步骤"></a>证明步骤</h3><p>正多面体的存在性受两个关键条件约束：欧拉公式和角度和条件。设正多面体的每个面为正 $p$ 边形（$p \geq 3$），每个顶点处有 $q$ 个面相交（$q \geq 3$）。记 $F$ 为面数，$E$ 为边数，$V$ 为顶点数。</p>
 <ol>
-<li><p><strong>欧拉公式</strong>：<br>对于凸多面体，欧拉公式为：<br>[<br>V - E + F &#x3D; 2<br>]</p>
+<li><p><strong>欧拉公式</strong>：<br>对于凸多面体，欧拉公式为：<br>$$ V - E + F &#x3D; 2 $$</p>
 </li>
-<li><p><strong>边和顶点的关系</strong>：<br>由于每条边被两个面共享，且被两个顶点共享，有：<br>[<br>pF &#x3D; 2E \quad \text{(每个面有 } p \text{ 条边，每条边属于两个面)}<br>]<br>[<br>qV &#x3D; 2E \quad \text{(每个顶点有 } q \text{ 条边相交，每条边连接两个顶点)}<br>]<br>由上式可得：<br>[<br>E &#x3D; \frac{pF}{2}, \quad V &#x3D; \frac{2E}{q} &#x3D; \frac{pF}{q}<br>]</p>
+<li><p><strong>边和顶点的关系</strong>：<br>由于每条边被两个面共享，且被两个顶点共享，有：<br>$$ pF &#x3D; 2E \quad \text{(每个面有 } p \text{ 条边，每条边属于两个面)} $$<br>$$ qV &#x3D; 2E \quad \text{(每个顶点有 } q \text{ 条边相交，每条边连接两个顶点)} $$<br>由上式可得：<br>$$ E &#x3D; \frac{pF}{2}, \quad V &#x3D; \frac{2E}{q} &#x3D; \frac{pF}{q} $$</p>
 </li>
-<li><p><strong>代入欧拉公式</strong>：<br>将 (E) 和 (V) 代入欧拉公式：<br>[<br>\frac{pF}{q} - \frac{pF}{2} + F &#x3D; 2<br>]<br>两边同乘 (2q) 消分母：<br>[<br>2q \cdot \frac{pF}{q} - 2q \cdot \frac{pF}{2} + 2q \cdot F &#x3D; 2 \cdot 2q<br>]<br>简化：<br>[<br>2pF - p q F + 2q F &#x3D; 4q<br>]<br>整理为：<br>[<br>F(2p + 2q - p q) &#x3D; 4q<br>]<br>因此：<br>[<br>F &#x3D; \frac{4q}{2p + 2q - p q}<br>]</p>
+<li><p><strong>代入欧拉公式</strong>：<br>将 $E$ 和 $V$ 代入欧拉公式：<br>$$ \frac{pF}{q} - \frac{pF}{2} + F &#x3D; 2 $$<br>两边同乘 $2q$ 消分母：<br>$$ 2pF - p q F + 2q F &#x3D; 4q $$<br>整理为：<br>$$ F(2p + 2q - p q) &#x3D; 4q $$<br>因此：<br>$$ F &#x3D; \frac{4q}{2p + 2q - p q} $$</p>
 </li>
-<li><p><strong>角度和条件</strong>：<br>在每个顶点处，(q) 个正 (p) 边形的内角之和必须小于 (360^\circ)，否则无法形成凸顶点（会平坦或自交）。正 (p) 边形的每个内角为 (\frac{(p-2)\pi}{p}) 弧度，或 (\frac{(p-2) \times 180^\circ}{p})。因此：<br>[<br>q \cdot \frac{(p-2) \times 180^\circ}{p} &lt; 360^\circ<br>]<br>简化：<br>[<br>q \cdot \frac{p-2}{p} &lt; 2 \implies q(p-2) &lt; 2p \implies p q - 2q - 2p &lt; 0<br>]<br>添加 4 到两边：<br>[<br>p q - 2p - 2q + 4 &lt; 4 \implies (p-2)(q-2) &lt; 4<br>]<br>由于 (p \geq 3) 和 (q \geq 3)，有 (p-2 \geq 1) 和 (q-2 \geq 1)，因此 ((p-2)(q-2)) 是正整数。不等式 ((p-2)(q-2) &lt; 4) 仅当 ((p-2)(q-2) &#x3D; 1, 2,) 或 (3) 时成立。</p>
+<li><p><strong>角度和条件</strong>：<br>在每个顶点处，$q$ 个正 $p$ 边形的内角之和必须小于 $360^\circ$。正 $p$ 边形的每个内角为 $\frac{(p-2)\pi}{p}$ 弧度，或 $\frac{(p-2) \times 180^\circ}{p}$。因此：<br>$$ q \cdot \frac{(p-2) \times 180^\circ}{p} &lt; 360^\circ $$<br>简化：<br>$$ q(p-2) &lt; 2p \implies (p-2)(q-2) &lt; 4 $$</p>
 </li>
-<li><p><strong>枚举可能解</strong>：<br>根据 ((p-2)(q-2) &lt; 4)，所有可能整数解为：</p>
+<li><p><strong>枚举可能解</strong>：<br>根据 $(p-2)(q-2) &lt; 4$，所有可能整数解为：  </p>
 <ul>
-<li>((p-2, q-2) &#x3D; (1, 1)) → (p &#x3D; 3, q &#x3D; 3)</li>
-<li>((p-2, q-2) &#x3D; (1, 2)) → (p &#x3D; 3, q &#x3D; 4)</li>
-<li>((p-2, q-2) &#x3D; (1, 3)) → (p &#x3D; 3, q &#x3D; 5)</li>
-<li>((p-2, q-2) &#x3D; (2, 1)) → (p &#x3D; 4, q &#x3D; 3)</li>
-<li>((p-2, q-2) &#x3D; (3, 1)) → (p &#x3D; 5, q &#x3D; 3)<br>其他组合如 ((2,2)) 会给出 ((p-2)(q-2) &#x3D; 4 \not&lt; 4)，导致角度和等于 (360^\circ)（平面镶嵌，非多面体）。类似地，更大值违反不等式。</li>
+<li>$(p, q) &#x3D; (3, 3)$  </li>
+<li>$(p, q) &#x3D; (3, 4)$  </li>
+<li>$(p, q) &#x3D; (3, 5)$  </li>
+<li>$(p, q) &#x3D; (4, 3)$  </li>
+<li>$(p, q) &#x3D; (5, 3)$</li>
 </ul>
 </li>
-<li><p><strong>计算面数 (F)</strong>：<br>对每个 ((p, q)) 组合，代入 (F &#x3D; \frac{4q}{2p + 2q - p q})：</p>
+<li><p><strong>计算面数 $F$</strong>：<br>对每个 $(p, q)$ 组合：  </p>
 <ul>
-<li>(p&#x3D;3, q&#x3D;3)：(F &#x3D; \frac{4 \times 3}{2 \times 3 + 2 \times 3 - 3 \times 3} &#x3D; \frac{12}{6 + 6 - 9} &#x3D; \frac{12}{3} &#x3D; 4)（正四面体）</li>
-<li>(p&#x3D;3, q&#x3D;4)：(F &#x3D; \frac{4 \times 4}{2 \times 3 + 2 \times 4 - 3 \times 4} &#x3D; \frac{16}{6 + 8 - 12} &#x3D; \frac{16}{2} &#x3D; 8)（正八面体）</li>
-<li>(p&#x3D;3, q&#x3D;5)：(F &#x3D; \frac{4 \times 5}{2 \times 3 + 2 \times 5 - 3 \times 5} &#x3D; \frac{20}{6 + 10 - 15} &#x3D; \frac{20}{1} &#x3D; 20)（正二十面体）</li>
-<li>(p&#x3D;4, q&#x3D;3)：(F &#x3D; \frac{4 \times 3}{2 \times 4 + 2 \times 3 - 4 \times 3} &#x3D; \frac{12}{8 + 6 - 12} &#x3D; \frac{12}{2} &#x3D; 6)（立方体）</li>
-<li>(p&#x3D;5, q&#x3D;3)：(F &#x3D; \frac{4 \times 3}{2 \times 5 + 2 \times 3 - 5 \times 3} &#x3D; \frac{12}{10 + 6 - 15} &#x3D; \frac{12}{1} &#x3D; 12)（正十二面体）<br>因此，所有可能的 (F) 值为 4、6、8、12、20。</li>
+<li>$(3, 3)$：$F &#x3D; 4$（正四面体）  </li>
+<li>$(3, 4)$：$F &#x3D; 8$（正八面体）  </li>
+<li>$(3, 5)$：$F &#x3D; 20$（正二十面体）  </li>
+<li>$(4, 3)$：$F &#x3D; 6$（立方体）  </li>
+<li>$(5, 3)$：$F &#x3D; 12$（正十二面体）</li>
 </ul>
 </li>
-<li><p><strong>检验 (F &#x3D; 114514)</strong>：<br>114514 不在集合 ({4, 6, 8, 12, 20}) 中。假设存在整数 (p \geq 3), (q \geq 3) 满足条件，但根据上述枚举，只有五种可能 ((p, q)) 对，且每个对应固定的 (F)。<br>直接代入 (F &#x3D; 114514) 到方程中也会矛盾：</p>
-<ul>
-<li>若 ((p-2)(q-2) &#x3D; 1)，则 (F &#x3D; \frac{4q}{3})，要求 (4q&#x2F;3 &#x3D; 114514) → (q &#x3D; 114514 \times 3 &#x2F; 4 &#x3D; 85885.5)，非整数，不可能。</li>
-<li>若 ((p-2)(q-2) &#x3D; 2)，则 (F &#x3D; 2q)，要求 (2q &#x3D; 114514) → (q &#x3D; 57257)。但 ((p-2)(q-2) &#x3D; 2)，代入 (q &#x3D; 57257) 得 ((p-2) \times 57255 &#x3D; 2)。由于 (p-2 \geq 1)，左边至少为 57255 &gt; 2，无整数解。</li>
-<li>若 ((p-2)(q-2) &#x3D; 3)，则 (F &#x3D; 4q)，要求 (4q &#x3D; 114514) → (q &#x3D; 28628.5)，非整数，不可能。<br>因此，无整数 (p, q) 满足方程。</li>
-</ul>
+<li><p><strong>检验 $F &#x3D; 114514$</strong>：<br>114514 不在集合 ${4, 6, 8, 12, 20}$ 中，且无法通过任何整数 $(p, q)$ 组合生成，因此不存在。</p>
 </li>
 </ol>
-<h3 id="结论"><a href="#结论" class="headerlink" title="结论"></a>结论</h3><p>由于三维空间中正多面体的面数 (F) 只能是 4、6、8、12 或 20，而 114514 不等于其中任何一个值，因此不存在面数为 114514 的正多面体。该结论基于欧拉公式和角度和条件的严格约束，是经典几何定理的直接结果。</p>
-<p>注意：114514 是一个网络迷因（如“臭数字”），但在数学上，它只是一个整数，不影响上述证明的普遍性。</p>
+<h3 id="结论"><a href="#结论" class="headerlink" title="结论"></a>结论</h3><p>由于三维空间中正多面体的面数 $F$ 只能是 4、6、8、12 或 20，而 $114514 \notin {4, 6, 8, 12, 20}$，因此不存在面数为114514的正多面体。</p>
 <hr>
 <p>好了，以上就是全部文章，希望能够帮到你。若你觉得文章有用，在评论区多多评论吧！或者你可以评论数字1-4，分别对应下图蕾娜的表情。</p>
 <p>1 没啥用… 2 哈哈哈，从未见过如此搞笑的文章！ 3 哇，真有用，好惊讶 4 哇，写的真好！</p>
@@ -555,7 +549,7 @@
 </div>
   
   
-    <script async src="../../../../js/copy-codeblock.js?v=1752238341108"></script>
+    <script async src="../../../../js/copy-codeblock.js?v=1752239050361"></script>
   
 
   
