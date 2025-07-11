@@ -1,0 +1,8 @@
+# 终极配置方案
+[[headers]]
+  for = "/*"
+  [headers.values]
+    x-nf-request-region = "hnd1"
+
+[build.environment]
+  AWS_DEFAULT_REGION = "ap-northeast-1"
