@@ -22,9 +22,9 @@
 <link rel="stylesheet" href="../../../../lib/mdui_043tiny/mdui.css">
 
 
-<link rel="stylesheet" href="../../../../lib/iconfont/iconfont.css?v=1753758490645">
+<link rel="stylesheet" href="../../../../lib/iconfont/iconfont.css?v=1753761000775">
 
-<link rel="stylesheet" href="../../../../css/style.css?v=1753758490645">
+<link rel="stylesheet" href="../../../../css/style.css?v=1753761000775">
 
 
 
@@ -36,7 +36,7 @@
 <script src="../../../../lib/lax.min.js" async></script>
 
 
-<script async src="../../../../js/app.js?v=1753758490645"></script>
+<script async src="../../../../js/app.js?v=1753761000775"></script>
 
  
 
@@ -588,26 +588,54 @@
 </div>
   
   
-    <script async src="../../../../js/copy-codeblock.js?v=1753758490447"></script>
+    <script async src="../../../../js/copy-codeblock.js?v=1753761000497"></script>
   
 
   
       <div class="nexmoe-post-footer">
-          <script src="https://giscus.app/client.js"
-      data-repo="ALZT02/ALZT02.github.io"
-      data-repo-id="R_kgDOO-UUWQ"
-      data-category="Announcements"
-      data-category-id="DIC_kwDOO-UUWc4Crwg2"
-      data-mapping="pathname"
-      data-strict="0"
-      data-reactions-enabled="1"
-      data-emit-metadata="0"
-      data-input-position="top"
-      data-theme="preferred_color_scheme"
-      data-lang="zh-CN"
-      crossorigin="anonymous"
-      async>
+          <div id="waline-comment"></div>
+<script type="module">
+  // 导入 Waline 客户端
+  import { init } from 'https://unpkg.com/@waline/client@v2/dist/waline.mjs';
+  
+  // Waline 初始化配置
+  init({
+    el: '#waline-comment', // 挂载点
+    serverURL: 'https://netlifycommentold.netlify.app/.netlify/functions/comment', // 替换为您的 Netlify 地址
+    lang: 'zh-CN', // 语言
+    dark: 'html[data-theme="dark"]', // 适配主题暗黑模式
+    
+    // 表情包配置
+    emoji: [
+      'https://unpkg.com/@waline/emojis@1.1.0/weibo',
+      'https://unpkg.com/@waline/emojis@1.1.0/bilibili'
+    ],
+    
+    // 登录配置
+    login: 'enable',
+    
+    // 评论框设置
+    locale: {
+      placeholder: '欢迎留言~（支持 Markdown 和 Emoji）',
+      sofa: '成为第一个评论的人吧！'
+    },
+    
+    // 必填字段
+    requiredMeta: ['nick'],
+    
+    // 其他配置
+    pageSize: 10,
+    imageUploader: true,
+    copyright: false
+  });
 </script>
+
+<!-- 加载 Waline CSS -->
+<link 
+  rel="stylesheet" 
+  href="https://unpkg.com/@waline/client@v2/dist/waline.css" 
+  media="print" onload="this.media='all'"
+/>
 
       </div>
   
